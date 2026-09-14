@@ -47,7 +47,7 @@ def main():
         if choice == '1':
             name = input("Enter student name: ")
             grade = input("Enter student grade: ")
-            add_student(name, grade)
+            add_student(name, grade)           
         elif choice == '2':
             name = input("Enter student name: ")
             get_student(name)
