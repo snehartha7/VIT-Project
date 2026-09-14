@@ -1,31 +1,34 @@
-student_grades ={}
-print("Welcome to the Student Grades Management System!")
-def add_student(name, grade):
+student_grades ={}    # made an empty dictionary.
+
+print("Welcome to the Student Grades Management System!")     # printed the welcome message.
+
+
+def add_student(name, grade):   # add student option completed.
     student_grades[name] = grade
     print(f"Added {name} with grade {grade}")
     
     
-def get_student(name):
+def get_student(name):      #get student option completed.
     if name in student_grades:
         print(f"{name}: {student_grades[name]}")
     else:
         print(f"Student {name} not found.")
         
-def update_student(name, grade):
+def update_student(name, grade):    # update student option completed.
     if name in student_grades:
         student_grades[name] = grade
         print(f"Updated {name} to grade {grade}")
     else:
         print(f"Student {name} not found.")
         
-def delete_student(name):
+def delete_student(name):     # delete student option completed.
     if name in student_grades:
         del student_grades[name]
         print(f"Deleted {name}")
     else:
         print(f"Student {name} not found.")
         
-def display_all_students():
+def display_all_students():     # display option completed.
     if student_grades:
         for name, grade in student_grades.items():
             print(f"{name}: {grade}")
@@ -60,7 +63,7 @@ def main():
             delete_student(name)
         elif choice == '5':
             display_all_students()
-        elif choice == '6':
+        elif choice == '6':    # exiting option completed.
             print("Exiting the program.")
             print("Thanks for using the Student Grades Management System!")
             break
@@ -69,4 +72,4 @@ def main():
         
         
             
-main()
+main()   # executed the program.
