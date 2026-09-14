@@ -1,7 +1,9 @@
-student_grades ={}    # made an empty dictionary.
+import time
 
-print("Welcome to the Student Grades Management System!")     # printed the welcome message.
-
+student_grades = {}    # made an empty dictionary.
+print("===================================================================================")
+print("                         Students' Grade Management System                         ")     # printed the welcome message.
+print("===================================================================================")
 
 def add_student(name, grade):   # add student option completed.
     student_grades[name] = grade
@@ -34,10 +36,14 @@ def display_all_students():     # display option completed.
             print(f"{name}: {grade}")
     else:
         print("No students found.")
+print("\n ================ Welcome to Students' Grades Management System ===============")
+time.sleep(1)
+print()
+print()
+
         
 def main():
     while True:
-        print("\n Student Grades Management System")
         print("1. Add Student")
         print("2. Get Student")
         print("3. Update Student")
@@ -49,14 +55,14 @@ def main():
         
         if choice == '1':
             name = input("Enter student name: ")
-            grade = input("Enter student grade: ")
+            grade = input("Enter student grade: ").upper()
             add_student(name, grade)           
         elif choice == '2':
             name = input("Enter student name: ")
             get_student(name)
         elif choice == '3':
             name = input("Enter student name: ")
-            grade = input("Enter new grade: ")
+            grade = input("Enter new grade: ").upper()
             update_student(name, grade)
         elif choice == '4':
             name = input("Enter student name: ")
@@ -65,10 +71,15 @@ def main():
             display_all_students()
         elif choice == '6':    # exiting option completed.
             print("Exiting the program.")
+            time.sleep(1)
             print("Thanks for using the Student Grades Management System!")
+            print("======================================================")
+            time.sleep(1)
             break
         else:
             print("Invalid choice. Please try again.")
+        
+        time.sleep(1)
         
         
             
