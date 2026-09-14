@@ -10,7 +10,8 @@ I made a Student Grade management system.
 - pip
 
 ## Installation
-
+Open cmd prompt or Windows Powershell.
+<br>
 Clone the repository:
 
     git clone https://github.com/snehartha7/VIT-Project.git
