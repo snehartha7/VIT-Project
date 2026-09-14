@@ -17,10 +17,6 @@ Enter the project directory:
 
     cd VIT-Project
 
-Install dependencies:
-
-    pip install -r requirements.txt
-
 ## Running the Program
 
 Run:
