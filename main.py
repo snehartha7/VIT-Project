@@ -1,6 +1,8 @@
 import time
 
 student_grades = {}    # made an empty dictionary.
+print()
+print()
 print("===================================================================================")
 print("                         Students' Grade Management System                         ")     # printed the welcome message.
 print("===================================================================================")
