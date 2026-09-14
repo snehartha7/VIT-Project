@@ -1,6 +1,5 @@
 student_grades ={}
 print("Welcome to the Student Grades Management System!")
-print("================================")
 def add_student(name, grade):
     student_grades[name] = grade
     print(f"Added {name} with grade {grade}")
@@ -69,4 +68,3 @@ def main():
             print("Invalid choice. Please try again.")
             
 main()
-print("================================")
