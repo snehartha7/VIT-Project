@@ -54,7 +54,7 @@ def main():
         print("5. Display All Students")
         print("6. Exit")
         
-        choice = input("Enter your choice: ")
+        choice = input("Enter your choice (1,2,3,4,5,6) : ")
         
         if choice == '1':
             name = input("Enter student name: ")
